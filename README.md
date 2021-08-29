@@ -31,9 +31,10 @@ This project was developed with the technologies above:
 
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
-- [Babel](https://babeljs.io/)
-- [Webpack](https://webpack.js.org/)
-- [Jest](https://jestjs.io/)
+- [Babel](https://babeljs.io)
+- [Webpack](https://webpack.js.org)
+- [Jest](https://jestjs.io)
+- [Styled Components](https://styled-components.com)
 
 ## 🚀 How to execute
 
