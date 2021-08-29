@@ -33,7 +33,7 @@ export const Content = styled.div`
     transition: filter 0.2s;
 
     &:hover {
-      filter: opacity(0.7);
+      filter: brightness(0.7);
     }
   }
 `;
