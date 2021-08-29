@@ -22,8 +22,8 @@ Dtmoney is a app to manage your money. This is the second project of ReactJS tra
 
 ## 🛠️ Features
 
-- [] List transactions
-- [] Add transactions
+- [ ] List transactions
+- [ ] Add transactions
 
 ## ✨ Technologies
 
