@@ -36,6 +36,7 @@ This project was developed with the technologies above:
 - [Webpack](https://webpack.js.org)
 - [Jest](https://jestjs.io)
 - [Styled Components](https://styled-components.com)
+- [MirageJS](https://miragejs.com)
 
 ## 🔖 Layout
 
