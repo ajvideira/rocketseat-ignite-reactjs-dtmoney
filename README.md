@@ -1,11 +1,12 @@
-<h1 align="center">dtmoney</h1>
+<h1 align="center">dt money</h1>
 <h2 align="center">Rocketseat - Ignite - ReactJS</h2>
 
 <h3 align="center">Chapter #2</h3>
 <p align="center">
   <a href="#-Project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer_and_wrench-Features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-How-to-execute">How to execute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Licence">Licence</a>
 </p>
@@ -18,9 +19,9 @@
 
 ## 💻 Project
 
-Dtmoney is a app to manage your money. This is the second project of ReactJS track of Ignite course from [Rocketseat](https://rocketseat.com.br/).
+dt money is a app to manage your money. This is the second project of ReactJS track of Ignite course from [Rocketseat](https://rocketseat.com.br/).
 
-## 🛠️ Features
+## :hammer_and_wrench: Features
 
 - [ ] List transactions
 - [ ] Add transactions
@@ -36,6 +37,10 @@ This project was developed with the technologies above:
 - [Jest](https://jestjs.io)
 - [Styled Components](https://styled-components.com)
 
+## 🔖 Layout
+
+You can view the project layout through [this link](https://www.figma.com/file/DZx1UwdWzm3ivFQAo3rkq4/dtmoney-Ignite). You must have a [Figma](http://figma.com) account to access it.
+
 ## 🚀 How to execute
 
 - Clone the repository
@@ -49,4 +54,4 @@ This project is under the MIT license. See the [LICENSE](./LICENSE) file for mor
 
 ---
 
-Feito com ♥ by Jonathan Alba Videira and Rocketseat
+Made with ♥ by Jonathan Alba Videira and Rocketseat
