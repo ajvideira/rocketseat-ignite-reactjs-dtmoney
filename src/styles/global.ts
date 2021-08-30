@@ -21,8 +21,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    background: var(--background);
-
     @media (max-width: 1080px) {
       font-size: 93.75%;
     }
@@ -34,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
+    background: var(--background);
   }
 
   body, input, textarea, button {
