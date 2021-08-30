@@ -37,6 +37,7 @@ This project was developed with the technologies above:
 - [Jest](https://jestjs.io)
 - [Styled Components](https://styled-components.com)
 - [MirageJS](https://miragejs.com)
+- [Axios](https://axios-http.com)
 
 ## 🔖 Layout
 
