@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     --text-body: #969CB3;
     --text-title: #363F5F;
 
-    --background: #F0F2F5;
+    --background: #E5E5E5;
     --shape: #FFFFFF
   }
 
@@ -21,6 +21,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
+    background: var(--background);
+
     @media (max-width: 1080px) {
       font-size: 93.75%;
     }
