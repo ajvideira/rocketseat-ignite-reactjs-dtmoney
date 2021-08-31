@@ -65,11 +65,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .react-modal-content {
-    background: var(--background);
+    background: #F0F2F5;
     width: 100%;
     max-width: 576px;
     border-radius: 0.25rem;
     padding: 3rem;
     position: relative;
+  }
+
+  .react-modal-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: transparent;
+    border: 0;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 `;
