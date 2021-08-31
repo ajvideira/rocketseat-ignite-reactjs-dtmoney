@@ -38,6 +38,7 @@ This project was developed with the technologies above:
 - [Styled Components](https://styled-components.com)
 - [MirageJS](https://miragejs.com)
 - [Axios](https://axios-http.com)
+- [Polished](https://polished.js.org)
 
 ## 🔖 Layout
 
