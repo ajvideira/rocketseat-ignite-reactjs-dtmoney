@@ -37,7 +37,7 @@ export const Container = styled.form`
     color: #fff;
 
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5rem;
 
     border-radius: 0.25rem;
