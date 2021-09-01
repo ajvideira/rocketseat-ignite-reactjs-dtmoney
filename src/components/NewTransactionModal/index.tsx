@@ -1,10 +1,10 @@
+import { FormEvent, useState } from "react";
 import ReactModal from "react-modal";
 import { Container, RadioBox, TransactionTypeContainer } from "./styles";
 
 import closeImg from "../../assets/close.svg";
 import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
-import { useState } from "react";
 
 type NewTransactionModalProps = {
   isOpen: boolean;
@@ -16,10 +16,13 @@ export function NewTransactionModal({
   onRequestClose,
 }: NewTransactionModalProps) {
   const [type, setType] = useState("deposit");
+  const [title, setTitle] = useState("");
+  const [value, setValue] = useState(0);
+  const [category, setCategory] = useState("");
 
-  function handleRabioBoxClick(e: React.SyntheticEvent, type: string) {
+  function handleCreateNewTransaction(e: FormEvent) {
     e.preventDefault();
-    setType(type);
+    console.log({ type, title, value, category });
   }
 
   return (
@@ -29,27 +32,43 @@ export function NewTransactionModal({
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
     >
-      <button className="react-modal-close" onClick={onRequestClose}>
+      <button
+        type="button"
+        className="react-modal-close"
+        onClick={onRequestClose}
+      >
         <img src={closeImg} alt="Fechar modal" />
       </button>
 
-      <Container>
+      <Container onSubmit={handleCreateNewTransaction}>
         <h2>Cadastrar transação</h2>
 
-        <input type="text" placeholder="Título" />
-        <input type="text" placeholder="Valor" />
+        <input
+          type="text"
+          placeholder="Título"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Valor"
+          value={value}
+          onChange={(e) => setValue(Number(e.target.value))}
+        />
         <TransactionTypeContainer>
           <RadioBox
+            type="button"
             isActive={type === "deposit"}
-            onClick={(e) => handleRabioBoxClick(e, "deposit")}
+            onClick={() => setType("deposit")}
             activeColor="green"
           >
             <img src={incomeImg} alt="Entrada" />
             <span>Entrada</span>
           </RadioBox>
           <RadioBox
+            type="button"
             isActive={type === "withdrawal"}
-            onClick={(e) => handleRabioBoxClick(e, "withdrawal")}
+            onClick={() => setType("withdrawal")}
             activeColor="red"
           >
             <img src={outcomeImg} alt="Saída" />
@@ -57,7 +76,12 @@ export function NewTransactionModal({
           </RadioBox>
         </TransactionTypeContainer>
 
-        <input type="text" placeholder="Categoria" />
+        <input
+          type="text"
+          placeholder="Categoria"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        />
         <button type="submit">Cadastrar</button>
       </Container>
     </ReactModal>
