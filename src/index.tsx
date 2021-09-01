@@ -20,7 +20,7 @@ createServer({
           id: 2,
           title: "Aluguel",
           amount: -500,
-          type: "withdrawl",
+          type: "withdrawal",
           category: "Home",
           date: new Date(),
         },
