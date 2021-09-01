@@ -42,6 +42,7 @@ export function NewTransactionModal({
           <RadioBox
             isActive={type === "deposit"}
             onClick={(e) => handleRabioBoxClick(e, "deposit")}
+            activeColor="green"
           >
             <img src={incomeImg} alt="Entrada" />
             <span>Entrada</span>
@@ -49,6 +50,7 @@ export function NewTransactionModal({
           <RadioBox
             isActive={type === "withdrawal"}
             onClick={(e) => handleRabioBoxClick(e, "withdrawal")}
+            activeColor="red"
           >
             <img src={outcomeImg} alt="Saída" />
             <span>Saída</span>
