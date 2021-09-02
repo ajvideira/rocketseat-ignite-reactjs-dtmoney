@@ -5,9 +5,7 @@ import { Container } from "./styles";
 
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-  if (transactions.length > 0) {
-    console.log(new Date(transactions[0].createdAt));
-  }
+
   useEffect(() => {
     api
       .get<{ transactions: Transaction[] }>("/transactions")
