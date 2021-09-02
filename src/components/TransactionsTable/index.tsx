@@ -5,7 +5,9 @@ import { Container } from "./styles";
 
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-
+  if (transactions.length > 0) {
+    console.log(new Date(transactions[0].createdAt));
+  }
   useEffect(() => {
     api
       .get<{ transactions: Transaction[] }>("/transactions")
@@ -27,9 +29,18 @@ export function TransactionsTable() {
           {transactions.map((transaction) => (
             <tr key={transaction.id}>
               <td>{transaction.title}</td>
-              <td className={transaction.type}>{transaction.amount}</td>
+              <td className={transaction.type}>
+                {Intl.NumberFormat("pt-BR", {
+                  style: "currency",
+                  currency: "BRL",
+                }).format(transaction.amount)}
+              </td>
               <td>{transaction.category}</td>
-              <td>{transaction.createdAt}</td>
+              <td>
+                {Intl.DateTimeFormat("pt-BR").format(
+                  new Date(transaction.createdAt)
+                )}
+              </td>
             </tr>
           ))}
         </tbody>

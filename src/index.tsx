@@ -17,7 +17,7 @@ createServer({
           amount: 2000,
           type: "deposit",
           category: "Venda",
-          createdAt: new Date("2020-01-01"),
+          createdAt: new Date("2020-01-01 00:00:00"),
         },
         {
           id: 2,
@@ -25,11 +25,13 @@ createServer({
           amount: 500,
           type: "withdrawal",
           category: "Casa",
-          createdAt: new Date("2021-02-01"),
+          createdAt: new Date("2021-02-01 00:00:00"),
         },
       ],
     });
   },
+  //"2020-01-01T00:00:00.000Z"
+  //"2020-01-01T03:00:00.000Z"
 
   routes() {
     this.namespace = "api";
