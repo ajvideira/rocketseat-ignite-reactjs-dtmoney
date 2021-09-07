@@ -23,8 +23,8 @@ dt money is a app to manage your money. This is the second project of ReactJS tr
 
 ## :hammer_and_wrench: Features
 
-- [ ] List transactions
-- [ ] Add transactions
+- [x] List transactions
+- [x] Add transactions
 
 ## ✨ Technologies
 
