@@ -1,8 +1,10 @@
 export type Transaction = {
   id: number;
-  title: Text;
+  title: string;
   amount: number;
   type: string;
   category: string;
   createdAt: Date;
 };
+
+export type TransactionInput = Omit<Transaction, "id" | "createdAt">;
